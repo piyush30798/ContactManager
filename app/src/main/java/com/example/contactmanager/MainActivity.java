@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt10,bt11,bt12;
+    TextView txt;
+
+    String num="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +32,15 @@ public class MainActivity extends AppCompatActivity {
         bt10=findViewById(R.id.bt10);
         bt11=findViewById(R.id.bt11);
         bt12=findViewById(R.id.bt12);
+        txt=findViewById(R.id.txt);
+
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                num = num + "1";
+                txt.setText(num);
 
             }
         });
@@ -39,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "2";
+                txt.setText(num);
+
             }
         });
 
@@ -46,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "3";
+                txt.setText(num);
             }
         });
 
@@ -53,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "4";
+                txt.setText(num);
             }
         });
 
@@ -60,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "5";
+                txt.setText(num);
             }
         });
 
@@ -67,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "6";
+                txt.setText(num);
             }
         });
 
@@ -74,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "7";
+                txt.setText(num);
             }
         });
 
@@ -81,6 +104,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "8";
+                txt.setText(num);
             }
         });
 
@@ -88,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "9";
+                txt.setText(num);
             }
         });
 
@@ -95,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "*";
+                txt.setText(num);
             }
         });
 
@@ -102,12 +131,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                num = num + "0";
+                txt.setText(num);
             }
         });
+
 
         bt12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                num = num + "#";
+                txt.setText(num);
 
             }
         });
